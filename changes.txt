@@ -1,0 +1,80 @@
+
+
+1. Change tip to 0, 10, 15 & 20 % DONE
+2. Add Delivery fee to order DONE
+3. Fix user profile bug DONE
+4. Set Tray description to Full Tray DONE
+
+
+6. change stripe to worldpay - PENDING
+
+7. on cancel by user check if status has changed - DONE
+8. 
+9. charity/tip not selected DONE
+
+
+
+truck app
+show ord dates- DONE
+explore MapBox logistics features - DONE
+truck app to see it order status has changed (throws a wierd msg) - DONE
+routific api for shortest path - DONE
+add arrived button -send sms to customer - DONE
+show zip to driver
+show qty on hand - DONE
+
+app changes:
+routific api for eta derivation - DONE
+customer svc phone nbr chabge - DONE
+
+
+server:
+html template for emails DONE
+map driver to zip - DONE
+
+portal:
+map driver to zip - DONE
+
+
+other:
+qr code for website -- opens up page with app links PEND
+
+NEW NEW 
+Add notes to truck app -done
+add app version to truck done
+eta ..add hrs on failure - done
+
+bugs..
+zipcode to db DONE
+delivery fee DONE
+
+truck navigate -done
+truck del fee on order info -done
+truck app show notes -done
+add app version to truck done
+
+change back button on forgot to home - DONE
+bulk order err on adding pack,family remove pack add again - DONE
+cancel order - fails to reset free cnt - DONE
+
+
+cust svc portal cancel order - pend
+
+truck --shift start issue -done
+nav not working - done
+api date & eta time - done
+
+
+1. Check ref code while registering - allow if found - done
+2. one code for one user?
+
+
+3. order view shows ..etc text next to time DONE
+4. turck app throws error
+5. add local notification for watchorderstatus
+add col to driverroute upddte - defualt datetiem - upd dao -- done
+
+track order --done
+truck app network issue - done
+back button tapp - done
+refresh on no order - done
