@@ -1,5 +1,19 @@
 #!/bin/bash
- 
+
+# For Linux/ubuntu/fedora/ instructions
+# download this file in a directory got to that directory
+# opern terminal and run bellow commands
+# chmod u+x kaushal
+# sudo apt-get install tor curl
+# sudo ./kaushal
+
+# install Tor browser and run Tor
+# opern terminal and run bellow commands
+# chmod u+x kaushal
+# brew install tor curl
+# sudo ./kaushal
+
+#
 # start tor service
  
 service tor start
