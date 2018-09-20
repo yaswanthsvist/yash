@@ -19,7 +19,7 @@
 # brew install tor curl
 # sudo ./kaushal
 
-# we hahve to change this variable from poll to poll rest of the code will be almost same
+# we have to change this variables from poll to poll, rest of the code will be almost same
 # varables need to change were: hash,pid,p,a,url
 
 # start tor service
