@@ -19,16 +19,21 @@
 # brew install tor curl
 # sudo ./kaushal
 
+# we hahve to change this variable from poll to poll rest of the code will be almost same
+# varables need to change were: hash,pid,p,a,url
 
 # start tor service
  
 service tor start
 clear
- 
+
+
+# veriable ki ending lo _s ani unte dat code is for scoopstime poll
+# newsbugz poll hash 
 hash=5daddb374042f3c545a97f732ff13e36
 pid=10027962
 nvotes=0
-#scoops 
+#scoopstime hash and pid
 hash_s=e3077de1e8a79fd363e05a662f2f74ac
 pid_s=9804561
 
@@ -61,10 +66,13 @@ while(true); do
   purl=http://polls.polldaddy.com/vote-js.php?
 
   # Variables to pass
+  #newsbugz
   p=10027962
+  #scoopstime
   p_s=9804561
   b=2
   # Answer ID
+  # kaushal anna option radio button unique id if we change this it will vote to other contestent
   a=46402921
   a_s=45976934
   o=""
