@@ -34,8 +34,8 @@ hash=5daddb374042f3c545a97f732ff13e36
 pid=10027962
 nvotes=0
 #scoopstime hash and pid
-hash_s=e3077de1e8a79fd363e05a662f2f74ac
-pid_s=9804561
+#hash_s=5daddb374042f3c545a97f732ff13e36
+#pid_s=10027962
 
 
 
@@ -51,17 +51,17 @@ while(true); do
     # curl -s --socks5-hostname localhost:9050 https://checkip.amazonaws.com/
      # Get the file containing the nonce
     res=$(curl -s --socks5-hostname localhost:9050 ${nurl}${ms})
-  res_s=$(curl -s --socks5-hostname localhost:9050 ${nurl_s}${ms})
+#  res_s=$(curl -s --socks5-hostname localhost:9050 ${nurl_s}${ms})
 
   # extract the nonce
   nonceWithChar="$(echo ${res}| cut -c 16-30)"
   printf "nonceWith:${nonceWithChar}\n"
   nonce="${nonceWithChar//\'}"
   printf "nonce:${nonce}\n"
-  nonceWithChar_s="$(echo ${res_s}| cut -c 15-29)"
-  printf "nonceWith_s:${nonceWithChar_s}\n"
-  nonce_s="${nonceWithChar_s//\'}"
-  printf "nonce_s:${nonce_s}\n"
+#  nonceWithChar_s="$(echo ${res_s}| cut -c 15-29)"
+#  printf "nonceWith_s:${nonceWithChar_s}\n"
+#  nonce_s="${nonceWithChar_s//\'}"
+#  printf "nonce_s:${nonce_s}\n"
   # Post URL
   purl=http://polls.polldaddy.com/vote-js.php?
 
@@ -69,20 +69,20 @@ while(true); do
   #newsbugz
   p=10027962
   #scoopstime
-  p_s=9804561
+#  p_s=9804561
   b=2
   # Answer ID
   # kaushal anna option radio button unique id if we change this it will vote to other contestent
-  a=46402921
-  a_s=45976934
+  a=46432964
+#  a_s=46432964
   o=""
   va=0
   cookie=0
   url=https%3A//www.newsbugz.com/star-maa-bigg-boss-vote-telugu-online-contestants-list-eliminations/
-  url_s=https%3A//www.scooptimes.com/television/bigg-boss-telugu-vote
+#  url_s=https%3A//www.scooptimes.com/television/bigg-boss-telugu-vote
 
   curl -s -X POST --socks5-hostname localhost:9050 --output /dev/null "https://polls.polldaddy.com/vote-js.php?p=${p}&b=${b}&a=${a}&o=${o}&va=${va}&cookie=${cookie}&n=${nonce}&url=${url}"
-  curl -s -X POST --socks5-hostname localhost:9050 --output /dev/null "https://polls.polldaddy.com/vote-js.php?p=${p_s}&b=${b}&a=${a_s}&o=${o}&va=${va}&cookie=${cookie}&n=${nonce_s}&url=${url_s}"
+#  curl -s -X POST --socks5-hostname localhost:9050 --output /dev/null "https://polls.polldaddy.com/vote-js.php?p=${p_s}&b=${b}&a=${a_s}&o=${o}&va=${va}&cookie=${cookie}&n=${nonce_s}&url=${url_s}"
  
     # Clean up
     #rm nonce.txt
